@@ -3,133 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intranet</title>
+    <title>PHRDC-Intranet</title>
+    <link rel="icon" href="./resources/images/page-icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/quicklinks.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.2/dist/css/bootstrap.min.css">
     
-    <!-- BOOTSTRAP CSS SCRIPT -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <!-- OWN CSS -->
-    <link rel="stylesheet" href="./css/style2.css">
 </head>
 <body>
-  <div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light mb-3" aria-label="Ninth navbar example">
-      <div class="container-xl">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img class="me-4" src="./img/phrdc-logo.png" alt="phrdc-logo" height="45">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarsExample07XL">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Quicklinks</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Forms</a></li>
-                <li><a class="dropdown-item" href="#">Policies</a></li>
-                <li><a class="dropdown-item" href="#">Shared Folder</a></li>
-              </ul>
-            </li>
-          </ul>
-          <button class="btn btn-outline-primary">Login</button>
-        </div>
-      </div>
-    </nav>
     
-    <section class="mainSection container">
-      <div class="row">
-        <!-- LEFT SECTION -->
-        <div class="leftSection col-md-8">
-          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-            </div>
-            <div class="carousel-inner rounded">
-              <div class="carousel-item">
-                <img class="carouselImage img-fluid" src="./img/carousel/img1.jpg" alt="Carousel Image Slideshow">
-              </div>
-              <div class="carousel-item active">
-                <img class="carouselImage img-fluid" src="./img/carousel/img2.jpg" alt="Carousel Image Slideshow">
-              </div>
-              <div class="carousel-item">
-                <img class="carouselImage img-fluid" src="./img/carousel/img3.jpg" alt="Carousel Image Slideshow">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+    <nav class="navbar navbar-expand-md navbar-dark mb-4"><!-- START OF NAVBAR -->
+        <div class="container-fluid">
+            <img class="ms-3 me-5" src="./resources/phrdc-logo-white.png" alt="phrdc-logo" height="45">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"  aria-controls="navbarCollapse" aria-expanded="false"    aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <!-- RIGHT SECTION -->
-        <div class="rightSection col-md-4">
-          <div class="container-fluid">
-            <div class="calendar">
-              <div class="calendar-header">
-                <span class="month-picker" id="month-picker"> May </span>
-                <div class="year-picker" id="year-picker">
-                  <span class="year-change" id="pre-year">
-                    <pre><</pre>
-                  </span>
-                  <span id="year">2020 </span>
-                  <span class="year-change" id="next-year">
-                    <pre>></pre>
-                  </span>
-                </div>
-              </div>
-                   
-              <div class="calendar-body">
-                <div class="calendar-week-days">
-                  <div>Sun</div>
-                  <div>Mon</div>
-                  <div>Tue</div>
-                  <div>Wed</div>
-                  <div>Thu</div>
-                  <div>Fri</div>
-                  <div>Sat</div>
-                </div>
-                <div class="calendar-days"></div>
-              </div>
-              <div class="calendar-footer"></div>
-              <div class="date-time-formate">
-                <div class="day-text-formate">TODAY</div>
-                <div class="date-time-value">
-                  <div class="time-formate">02:51:20</div>
-                  <div class="date-formate">23 - july - 2022</div>
-                </div>
-              </div>
-              <div class="month-list"></div>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>   
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://192.168.68.174:5000/#/signin" target="_blank" rel="noopener noreferrer">NAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.pinnaclehomes.ph" target="_blank" rel="noopener noreferrer">Our Website</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <!-- <a class="btn btn-outline-info px-4" href="./login.html">LOGIN</a> -->
+                    <a class="Btn me-2" href="./login.html">
+                        <div class="sign"><svg viewBox="0 0 512 512"><path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg></div>
+                        <div class="text ps-2">Login</div>
+                    </a>
+                </form>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </nav><!-- END OF NAVBAR -->
+    
+    <div class="my-3"></div>
 
-    <div class="mt-5"></div>
-    <div class="secondSection container">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum eum voluptatem repellat, reprehenderit, hic ratione aut, eaque laboriosam voluptatibus quaerat nemo fugit voluptate id excepturi blanditiis ad. Repellat, non.</p>
+    <div class="mainDiv container">
+        <section class="firstSection row"><!-- START OF FIRST SECTION -->
+            <div class="firstLeftSection col-md-8"><!-- START OF FIRST LEFT SECTION -->
+                <div id="myCarousel" class="carousel slide mb-6 shadow rounded" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item">
+                            <img class="carouselImage img-fluid" src="./resources/carousel/img1.jpg" alt="Carousel Image Slideshow">
+                        </div>
+                        <div class="carousel-item active">
+                            <img class="carouselImage img-fluid" src="./resources/carousel/img2.jpg" alt="Carousel Image Slideshow">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carouselImage img-fluid" src="./resources/carousel/img3.jpg" alt="Carousel Image Slideshow">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div><!-- END OF FIRST LEFT SECTION -->
+
+            <div class="firstRightSection col-md-4"><!-- START OF FIRST RIGHT SECTION -->
+                <div class="calendar border shadow">
+                    <div class="calendar-header">
+                      <span class="month-picker" id="month-picker"> May </span>
+                      <div class="year-picker" id="year-picker">
+                        <span class="year-change" id="pre-year">
+                          <pre><</pre>
+                        </span>
+                        <span id="year">2020 </span>
+                        <span class="year-change" id="next-year">
+                          <pre>></pre>
+                        </span>
+                      </div>
+                    </div>
+                         
+                    <div class="calendar-body">
+                      <div class="calendar-week-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="calendar-days"></div>
+                    </div>
+                    <div class="calendar-footer"></div>
+                    <div class="date-time-formate">
+                      <div class="day-text-formate">TODAY</div>
+                      <div class="date-time-value">
+                        <div class="time-formate">02:51:20</div>
+                        <div class="date-formate">23 - july - 2022</div>
+                      </div>
+                    </div>
+                    <div class="month-list"></div>
+                </div>
+            </div><!-- END OF FIRST RIGHT SECTION -->
+
+        </section><!-- END OF FIRST SECTION -->
+        
+        <div class="my-3"></div>
+
+        <section class="secondSection row"><!-- START OF SECOND SECTION -->
+            <div class="secondLeftSection col-md-8"><!-- START OF SECOND LEFT SECTION -->
+                <div class="card shadow" style="height: 32.5rem;">
+                    <div class="row g-0">
+                        <div class="card-header"><h4>Announcement</h4></div>
+                        <div class="card-body col-md-4">
+                          <img src="./resources/images/login-img3.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">To All Employees</h5>
+                            <p class="card-text"><span class="fw-bold">What: </span> TBA</p>
+                            <p class="card-text"><span class="fw-bold">Where: </span>TBA</p>
+                            <p class="card-text"><span class="fw-bold">When: </span>TBA</p>
+                            <p class="card-text"><span class="fw-bold">Details: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vitae explicabo maxime enim molestiae at reprehenderit. Officia, assumenda! Mollitia ipsam fuga labore, animi exercitationem laudantium. Saepe iusto nesciunt iste minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quaerat sint. Ducimus praesentium suscipit, eveniet placeat nisi aliquam eaque. Adipisci nihil sint neque tempore nesciunt velit, asperiores provident veritatis dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nam maxime voluptates pariatur aspernatur omnis tempore iusto, eaque minus modi, aliquam id! Perferendis, laborum quo eaque consequuntur aliquam quia sint!</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div><!-- END OF SECOND LEFT SECTION -->
+
+            <div class="secondRightSection col-md-4"><!-- START OF SECOND RIGHT SECTION -->
+                <div class="card shadow" style="height: 32.5rem;">
+                    <div class="card-header">
+                        <h4>Birthdays</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3 mb-sm-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-img-top img-fluid mb-" src="./resources/userpic/abet.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer py-1">
+                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3 mb-sm-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-img-top img-fluid" src="./resources/userpic/abet.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer py-1">
+                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3 mb-sm-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-img-top img-fluid" src="./resources/userpic/abet.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer py-1">
+                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3 mb-sm-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-img-top img-fluid" src="./resources/userpic/abet.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer py-1">
+                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END OF SECOND RIGHT SECTION -->
+        </section><!-- END OF SECOND SECTION -->
+
+        <div class="my-3"></div>
+
+        <section class="thirdSection row"><!-- START OF THIRD SECTION -->
+            <div class="thirdLeftSection col-md-8"><!-- START OF THIRD LEFT SECTION -->
+                <div class="row">
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                      <div class="card shadow">
+                        <img src="./resources/images/policy-img.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">POLICIES</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card shadow">
+                            <img src="./resources/images/forms-img.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">FORMS</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card shadow">
+                            <img src="./resources/images/vision-img2.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">VISION</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card shadow">
+                            <img src="./resources/images/mission-img.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">MISSION</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="my-3"></div>
+                  <div class="col-md-12">
+                    <div class="card shadow" style="height: 27.2vh;">
+                    </div>
+                  </div>
+            </div><!-- END OF THIRD LEFT SECTION -->
+
+            <div class="thirdRightSection col-md-4"><!-- START OF THIRD RIGHT SECTION -->
+                <div class="card shadow">
+                    <img class="card-img-top image-fluid" src="./resources/images/directory-img.png" alt="" style="height: 10rem;">
+                    <div class="card-body">
+                        <h4 class="text-center py-2">Local Phone Directory</h4>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Dial Number</th>
+                                  <th scope="col">Department</th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-group-divider">
+                                <tr>
+                                    <th>0</th>
+                                    <th>Reception</th>
+                                </tr>
+                                <tr>
+                                    <th>802</th>
+                                    <th>Madonna</th>
+                                </tr>
+                                <tr>
+                                    <th>803</th>
+                                    <th>Patrick</th>
+                                </tr>
+                                <tr>
+                                    <th>804</th>
+                                    <th>Shiela</th>
+                                </tr>
+                                <tr>
+                                    <th>805</th>
+                                    <th>DJ</th>
+                                </tr>
+                                <tr>
+                                    <th>806</th>
+                                    <th>Engineering</th>
+                                </tr>
+                                <tr>
+                                    <th>807</th>
+                                    <th>IT & Sales</th>
+                                </tr>
+                                <tr>
+                                    <th>808</th>
+                                    <th>Documentation</th>
+                                </tr>
+                                <tr>
+                                    <th>809</th>
+                                    <th>Accounting</th>
+                                </tr>
+                                <tr>
+                                    <th>810</th>
+                                    <th>HG</th>
+                                </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><!-- END OF THIRD RIGHT SECTION -->
+        </section><!-- END OF THIRD SECTION -->
+
+        <div class="my-3"></div>
+
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top fw-medium">
+              <div class="col mb-3">
+                <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <img class="bi me-2" width="150" height="50" src="./resources/phrdc-logo.png" alt="pinnacle logo">
+                </a>
+                <p class="text-body-secondary">Live the dream at Pinnacle Homes — a fast-rising real estate developer in the Philippines with initiatives in socialized and affordable housing in accessible locations throughout the country.</p>
+                <p class="text-body-secondary">© 2023</p>
+              </div>
+          
+              <div class="col mb-3">
+          
+              </div>
+          
+              <div class="col mb-3">
+                <h5 style="color: #2649B6;">Head Office</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">8/F Jacinta Bldg. 2, EDSA,
+                    Guadalupe Nuevo, Makati</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span class="fw-bold" style="color: #2649B6;">Sales: </span>0917-712-7690</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span class="fw-bold" style="color: #2649B6;">Billing: </span>0917-700-8613</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span class="fw-bold" style="color: #2649B6;">Others: </span>(02) 5310 3365</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">info@pinnaclehomes.ph</a></li>
+                </ul>
+              </div>
+              <div class="col mb-3">
+          
+              </div>
+              
+              <div class="col mb-">
+                <h5 style="color: #2649B6;">Social Media</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Youtube</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Linkedin</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+
     </div>
-  </div>
 
 
-
-
-    <!-- BOOTSTRAP JS SCRIPT -->
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="./js/calendar.js"></script>
 </body>
 </html>
-<script src="./js/calendar2.js"></script>
