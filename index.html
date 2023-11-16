@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHRDC-Intranet</title>
     <link rel="icon" href="./resources/images/page-icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/quicklinks.css">
     <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
@@ -35,6 +36,7 @@
                     
                 </ul>
                 <form class="d-flex" role="search">
+                    
                     <!-- <a class="btn btn-outline-info px-4" href="./login.html">LOGIN</a> -->
                     <a class="Btn me-2" href="./login.html">
                         <div class="sign"><svg viewBox="0 0 512 512"><path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg></div>
@@ -153,16 +155,6 @@
                             <div class="col-sm-6 mb-3 mb-sm-2">
                                 <div class="card">
                                     <div class="card-body">
-                                        <img class="card-img-top img-fluid mb-" src="./resources/userpic/abet.jpg" alt="">
-                                    </div>
-                                    <div class="card-footer py-1">
-                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-3 mb-sm-1">
-                                <div class="card">
-                                    <div class="card-body">
                                         <img class="card-img-top img-fluid" src="./resources/userpic/abet.jpg" alt="">
                                     </div>
                                     <div class="card-footer py-1">
@@ -173,20 +165,30 @@
                             <div class="col-sm-6 mb-3 mb-sm-1">
                                 <div class="card">
                                     <div class="card-body">
-                                        <img class="card-img-top img-fluid" src="./resources/userpic/abet.jpg" alt="">
+                                        <img class="card-img-top img-fluid" src="./resources/userpic/hanna-img.png" alt="">
                                     </div>
                                     <div class="card-footer py-1">
-                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
+                                        <h6 class="text-center text-uppercase">June 1 <span>- Hanna</span></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 mb-3 mb-sm-1">
                                 <div class="card">
                                     <div class="card-body">
-                                        <img class="card-img-top img-fluid" src="./resources/userpic/abet.jpg" alt="">
+                                        <img class="card-img-top img-fluid" src="./resources/userpic/chris-img.png" alt="">
                                     </div>
                                     <div class="card-footer py-1">
-                                        <h6 class="text-center text-uppercase">may 26 <span>- albert</span></h6>
+                                        <h6 class="text-center text-uppercase">may 26 <span>- Chris</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3 mb-sm-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-img-top img-fluid" src="./resources/userpic/gene-img.png" alt="">
+                                    </div>
+                                    <div class="card-footer py-1">
+                                        <h6 class="text-center text-uppercase">may 26 <span>- Gene</span></h6>
                                     </div>
                                 </div>
                             </div>
@@ -201,8 +203,63 @@
         <section class="thirdSection row"><!-- START OF THIRD SECTION -->
             <div class="thirdLeftSection col-md-8"><!-- START OF THIRD LEFT SECTION -->
                 <div class="col-md-12">
-                    <div class="card shadow" style="height: 27.2vh;">
-                        
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="./resources/userpic/abet.jpg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name text-center">Albert M. <br><span class="text-primary">IT-Specialist</span></h2>
+                                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="./resources/userpic/hanna.jpg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name text-center">Hanna A. <br><span class="text-primary">MIS-Specialist</span></h2>
+                                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="./resources/userpic/chris.jpg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name text-center">Christoffer A. <br><span class="text-primary">Cost Engineer</span></h2>
+                                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="./resources/userpic/gene.png" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name text-center">Gene L. <br><span class="text-primary">Arch. Draftsman</span></h2>
+                                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 
@@ -213,8 +270,7 @@
                             <img src="./resources/images/policy-img.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">POLICIES</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">View Details</a>
+                                <a href="#" class="btn btn-sm btn-primary mb-2 mt-3">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -223,8 +279,34 @@
                             <img src="./resources/images/forms-img.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">FORMS</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">View Details</a>
+                                <a href="#" class="btn btn-sm btn-primary mb-2 mt-3" data-bs-toggle="modal" data-bs-target="#visionModal">View Details</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="visionModal" tabindex="-1" aria-labelledby="visionModal" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">FORMS</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="text-md-start">HR Forms</h6>
+                                            <ul class="list-group list-group-numbered">
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/hr/Leave-Form.xlsx">Leave Form</a></li>
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/hr/OT-Form.xlsx">Overtime Form</a></li>
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/hr/OB-Form.xlsx">Official Business Form</a></li>
+                                            </ul>
+
+                                            <h6 class="text-md-start">Accounting Forms</h6>
+                                            <ul class="list-group list-group-numbered">
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/accounting/RS-Form.xlsx">Requisition Slip Form</a></li>
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/accounting/RFP-Form.xls">Request for Payment Form</a></li>
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/accounting/PO-Form.xlsx">Purchase Order Form</a></li>
+                                                <li class="py-1 list-group-item text-sm-start"><a style="text-decoration: none;" href="./forms/accounting/PriceCom-Form.xlsx">Price Comparison Form</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -233,8 +315,21 @@
                             <img src="./resources/images/vision-img2.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">VISION</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">View Details</a>
+                                <a href="#" class="btn btn-sm btn-primary mb-2 mt-3" data-bs-toggle="modal" data-bs-target="#visionModal">View Details</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="visionModal" tabindex="-1" aria-labelledby="visionModal" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">VISION</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="card-text p-4">We Dream of a nation where Filipinos from all walks of life have access to decent and dignified housing -- allowing them to lead meaningful lives. Pinnacle Homes will continue to build affordable residential developments nationwide to create opportunities for more Filipinos to own a home.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -243,8 +338,21 @@
                             <img src="./resources/images/mission-img.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">MISSION</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">View Details</a>
+                                <a href="#" class="btn btn-sm btn-primary mb-2 mt-3" data-bs-toggle="modal" data-bs-target="#missionModal">View Details</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="missionModal" tabindex="-1" aria-labelledby="missionModal" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">MISSION</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="card-text p-4">Our mission is to provide Filipinos a sense of fulfillment and stability by empowering them to achieve the milestone of homeownership thru affordable, good-quality housing in accessible locations throughout the country.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,7 +364,7 @@
                 <div class="card shadow">
                     <img class="card-img-top image-fluid" src="./resources/images/directory-img.png" alt="" style="height: 10rem;">
                     <div class="card-body">
-                        <h4 class="text-center py-2">Local Phone Directory</h4>
+                        <h4 class="text-center my-2 py-3">Local Phone Directory</h4>
                         <table class="table table-sm">
                             <thead>
                                 <tr>
@@ -266,44 +374,44 @@
                               </thead>
                               <tbody class="table-group-divider">
                                 <tr>
-                                    <th>0</th>
-                                    <th>Reception</th>
+                                    <td>0</td>
+                                    <td>Reception</td>
                                 </tr>
                                 <tr>
-                                    <th>802</th>
-                                    <th>Madonna</th>
+                                    <td>802</td>
+                                    <td>Madonna</td>
                                 </tr>
                                 <tr>
-                                    <th>803</th>
-                                    <th>Patrick</th>
+                                    <td>803</td>
+                                    <td>Patrick</td>
                                 </tr>
                                 <tr>
-                                    <th>804</th>
-                                    <th>Shiela</th>
+                                    <td>804</td>
+                                    <td>Shiela</td>
                                 </tr>
                                 <tr>
-                                    <th>805</th>
-                                    <th>DJ</th>
+                                    <td>805</td>
+                                    <td>DJ</td>
                                 </tr>
                                 <tr>
-                                    <th>806</th>
-                                    <th>Engineering</th>
+                                    <td>806</td>
+                                    <td>Engineering</td>
                                 </tr>
                                 <tr>
-                                    <th>807</th>
-                                    <th>IT & Sales</th>
+                                    <td>807</td>
+                                    <td>IT & Sales</td>
                                 </tr>
                                 <tr>
-                                    <th>808</th>
-                                    <th>Documentation</th>
+                                    <td>808</td>
+                                    <td>Documentation</td>
                                 </tr>
                                 <tr>
-                                    <th>809</th>
-                                    <th>Accounting</th>
+                                    <td>809</td>
+                                    <td>Accounting</td>
                                 </tr>
                                 <tr>
-                                    <th>810</th>
-                                    <th>HG</th>
+                                    <td>810</td>
+                                    <td>HG</td>
                                 </tr>
                               </tbody>
                         </table>
@@ -330,7 +438,7 @@
               </div>
           
               <div class="col mb-3">
-                <h5 style="color: #2649B6;">Head Office</h5>
+                <h5 class="fw-bold" style="color: #2649B6;">Head Office</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">8/F Jacinta Bldg. 2, EDSA,
                     Guadalupe Nuevo, Makati</a></li>
@@ -345,7 +453,7 @@
               </div>
               
               <div class="col mb-">
-                <h5 style="color: #2649B6;">Social Media</h5>
+                <h5 class="fw-bold" style="color: #2649B6;">Social Media</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
@@ -361,6 +469,9 @@
 
 
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
     <script src="./js/calendar.js"></script>
+    <script src="./js/cardslider.js"></script>
 </body>
 </html>
